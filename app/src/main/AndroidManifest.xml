@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bu manifest dosyası, com.example.smsspamdetector paketinin yapılandırmasını içerir. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smsspamdetector">
+
+    <!-- Telefon özellikleri gereksinimleri -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- Uygulama için gerekli izinler -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Uygulamanın ana yapılandırması -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmsSpamDetector">
+
+        <!-- Uygulama içi aktivitelerin tanımlanması -->
+        <activity
+            android:name="com.sehmusacar.AcarSMSDetector.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sehmusacar.AcarSMSDetector.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.sehmusacar.AcarSMSDetector.MsgDetailsActivity"
+            android:exported="false" />
+        <!-- Ana ekran aktivitesi -->
+        <activity
+            android:name="com.sehmusacar.AcarSMSDetector.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- SMS alındığında tetiklenecek BroadcastReceiver -->
+        <receiver
+            android:name="com.sehmusacar.AcarSMSDetector.SmsBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+                <action android:name="android.provider.Telephony.SMS_DELIVER_ACTION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

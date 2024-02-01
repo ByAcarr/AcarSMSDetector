@@ -1,0 +1,25 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/drawable/search_background.xml" value="0.1" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/activity_msg_details.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/activity_search.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/activity_test.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/single_details_msg_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/single_msg_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/single_search_header.xml" value="0.16621376811594202" />
+        <entry key="..\:/Users/mohan/AndroidStudioProjects/SmsSpamDetector/app/src/main/res/layout/single_search_message.xml" value="0.16621376811594202" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
